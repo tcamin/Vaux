@@ -17,6 +17,11 @@ public struct HTMLBuilder {
     return MultiNode(children: [])
   }
 
+  /// Allows you to return an arrat of childs.
+  public static func buildBlocks(_ content: [HTML]) -> HTML {
+    return MultiNode(children: content)
+  }
+
   /// Allows you to return one child directly.
   public static func buildBlock(_ content: HTML) -> HTML {
     return content
